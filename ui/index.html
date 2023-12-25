@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header class="dashboard-header">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <section class="search-section">
+        <form id="cityForm" class="city-form">
+            <input type="text" id="cityInput" class="city-input" placeholder="Enter a city name" required>
+            <button type="submit" class="btn btn-primary">Get Weather</button>
+        </form>
+    </section>
+    <section id="weatherDisplay" class="weather-info" style="display:none;">
+        <div class="weather-row"><span>City:</span> <span id="city"></span></div>
+        <div class="weather-row"><span>Location:</span> <span id="location"></span></div>
+        <div class="weather-row"><span>Weather:</span> <span id="weather"></span></div>
+        <div class="weather-row"><span>Climate:</span> <span id="description"></span></div>
+        <div class="weather-row"><span>Temperature:</span> <span id="temperature"></span></div>
+        <div class="weather-row"><span>Feels Like:</span> <span id="feelsLike"></span></div>
+        <div class="weather-row"><span>Max Temp:</span> <span id="maxTemp"></span></div>
+        <div class="weather-row"><span>Min Temp:</span> <span id="minTemp"></span></div>
+        <div class="weather-row"><span>Pressure:</span> <span id="pressure"></span></div>
+        <div class="weather-row"><span>Humidity:</span> <span id="humidity"></span></div>
+        <div class="weather-row"><span>Wind:</span> <span id="windSpeed"></span></div>
+        <div class="weather-row"><span>Direction:</span> <span id="windDirection"></span></div>
+        <div class="weather-row"><span>Cloudiness:</span> <span id="cloudiness"></span></div>
+        <div class="weather-row"><span>Sunrise:</span> <span id="sunriseTime"></span></div>
+        <div class="weather-row"><span>Sunset:</span> <span id="sunsetTime"></span></div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

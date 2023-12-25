@@ -1,0 +1,1 @@
+module.exports.errorCodes = ["400", "404"]
