@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to fetch weather data from API
     function fetchWeatherData(city) {
-        const apiUrl = `http://localhost:8888/weather?city=${encodeURIComponent(city)}`;
+        const apiUrl = `https://weather-dashboard-ulp4.onrender.com/weather?city=${encodeURIComponent(city)}`;
         fetch(apiUrl)
             .then(response => {
                 if (!response.ok) {
